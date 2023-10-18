@@ -24,11 +24,11 @@
 
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About Me</a>
+                        <a href="#about" class="nav__link ">About Me</a>
                     </li>
 
                     <li class="nav__item">
@@ -36,7 +36,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact Me</a>
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
                     </li>
                 </ul>
 
@@ -47,6 +47,10 @@
             </div>
 
             <div class="nav__buttons">
+
+                <!-- Theme Button -->
+
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
                 <!-- Toggle buttons -->
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="ri-menu-2-line"></i>
@@ -158,7 +162,7 @@
         <!--==================== SERVICES ====================-->
         <section class="services section">
            <h2 class="section__title-2">
-            <span>Services</span>
+            <span>Hobbies</span>
            </h2>
 
            <div class="services__container container grid">
@@ -175,7 +179,7 @@
                         <h2 class="services__title">Creating Websites</h2>
 
                         <p class="services__description">
-                            I help create the websites according to your specifications
+                            I love creating websites according to your specifications and needs, and by doing that I continue to develop myself
                         </p>
                     </div>
                 
@@ -187,13 +191,13 @@
                     <div class="services__content">
                         <div class="services__icon">
                             <div class="services__box"></div>
-                            <i class="ri-code-s-slash-line"></i>
+                            <i class="ri-book-line"></i>
                         </div>
 
-                        <h2 class="services__title">Domain</h2>
+                        <h2 class="services__title">Reading</h2>
 
                         <p class="services__description">
-                            I Register every domain name you wish to have on your website
+                            I love reading books, mostly Science Fiction
                         </p>
                     </div>
                 
@@ -205,12 +209,12 @@
                     <div class="services__content">
                         <div class="services__icon">
                             <div class="services__box"></div>
-                            <i class="ri-smartphone-line"></i>
+                            <i class="ri-gamepad-line"></i>
                         </div>
 
-                        <h2 class="services__title">Responsive for Other Devices</h2>
+                        <h2 class="services__title">Video Games</h2>
 
-                        <p class="services__description">Creating a website that is also looking good on your phone or tablet</p>
+                        <p class="services__description">Video Games is something I enjoy doing ( I love single-player games, I suck in multiplayer ), mostly puzzle games, Action-Adventure or Horror </p>
                     </div>
                 
             </article>
@@ -220,7 +224,7 @@
         <!--==================== PROJECTS ====================-->
         <section class="projects section" id="projects">
            <h2 class="section__title-1">
-            <span class="Projects"></span>
+            <span >Projects.</span>
            </h2>
 
            <div class="projects__container container grid">
@@ -243,8 +247,8 @@
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/rafaelteles27" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://hackathonrememberme.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-pages-line"></i> View Website
                     </a>
 
                     <a href="https://gitlab.com/rafateles27" target="_blank" class="projects__link">
@@ -272,10 +276,6 @@
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/rafaelteles27" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                    </a>
-
                     <a href="https://gitlab.com/rafateles27" target="_blank" class="projects__link">
                         <i class="ri-gitlab-line"></i> View
                     </a>
@@ -296,15 +296,11 @@
                     <h2 class="projects__title">TCP Chat</h2>
 
                     <p class="projects__description">
-                        Projects that you carry out in the design and structure
+                        A project I made in the bootcamp about creating multiple chats using TCP
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/rafaelteles27" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                    </a>
-
                     <a href="https://gitlab.com/rafateles27" target="_blank" class="projects__link">
                         <i class="ri-gitlab-line"></i> View
                     </a>
@@ -313,7 +309,7 @@
 
             <article class="projects__card">
                 <div class="projects__image">
-                    <img src="assets/img/Hackathon.png" alt="" class="projects__img">
+                    <img src="assets/img/challenge.png" alt="" class="projects__img">
 
                     <a href=" " class="projects__button button">
                         <i class="ri-arrow-right-up-line"></i>
@@ -321,21 +317,77 @@
                 </div>
 
                 <div class="projects__content">
-                    <h3 class="projects__subtitle"></h3>
-                    <h2 class="projects__title"></h2>
+                    <h3 class="projects__subtitle">Website Page</h3>
+                    <h2 class="projects__title">Landing Page with React</h2>
 
                     <p class="projects__description">
-                        Projects that you carry out in the design and structure
+                        A project made for a job interview where I had to make a landing page using HTML/CSS, TailwindCSS and Javascript. After I made this, and to develop myself more, I decided to make this project in React to learn more about the Framework
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/rafaelteles27" target="_blank" class="projects__link">
+                    <a href="https://github.com/rafaelteles27/Landing-page-with-react" target="_blank" class="projects__link">
                         <i class="ri-github-line"></i> View
                     </a>
+                    <a href="https://challenge-exercise.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-pages-line"></i></i> View Page
+                    </a>
+                </div>
+            </article>
 
-                    <a href="https://gitlab.com/rafateles27" target="_blank" class="projects__link">
-                        <i class="ri-gitlab-line"></i> View
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/img/homebanking.png" alt="" class="projects__img">
+
+                    <a href=" " class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website Page</h3>
+                    <h2 class="projects__title">homebanking Application</h2>
+
+                    <p class="projects__description">
+                        A project made for a job interview where I had to make a simple web-based Homebanking application built with Angular, where users can register, log in, view their account balance, deposit, withdraw, and view transaction history.
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/rafaelteles27/homebanking_test" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a href="https://homebankingexercise.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-pages-line"></i></i> View Page
+                    </a>
+                </div>
+            </article>
+
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img src="assets/img/appointment.png" alt="" class="projects__img">
+                    <img src="assets/img/admin_appointment.png" alt="" class="projects__img">
+
+                    <a href=" " class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
+
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">Website</h3>
+                    <h2 class="projects__title">Appointment Schedule Application</h2>
+
+                    <p class="projects__description">
+                        A Project that I'm currently making for my girlfriend for her clients to make appointments
+                    </p>
+                </div>
+
+                <div class="projects__buttons">
+                    <a href="https://github.com/rafaelteles27/homebanking_test" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                    <a href="https://homebankingexercise.netlify.app/" target="_blank" class="projects__link">
+                        <i class="ri-pages-line"></i></i> View Page
                     </a>
                 </div>
             </article>
@@ -390,8 +442,10 @@
                             <label for="message" class="contact__label">Message</label>
                         </div>
 
+                        <p class="contact__message" id="contact-message"></p>
+
                         <button type="submit" class="contact__button button">
-                            <i class="ri-send-plane-line">Send Message</i>
+                            <i class="ri-send-plane-line"></i> Send Message
                         </button>
                     </form>
                 </div>
@@ -405,7 +459,7 @@
                                 Does not send emails
                             </p>
 
-                            <p class="contact__social-description-1">
+                            <p class="contact__social-description-2">
                                 Write me on my social networks
                             </p>
                         </div>
@@ -428,14 +482,31 @@
 
      <!--==================== FOOTER ====================-->
      <footer class="footer">
-        
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#home" class="footer__link">Home </a>
+                </li>
+
+                <li>
+                    <a href="#about" class="footer__link">About </a>
+                </li>
+
+                <li>
+                    <a href="#projects" class="footer__link">Projects </a>
+                </li>
+            </ul>
+
+        </div>
      </footer>
 
      <!--========== SCROLL UP ==========-->
-     
+     <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+     </a>
 
      <!--=============== SCROLLREVEAL ===============-->
-     <script src=""></script>
+     <script src="assets/js/scrollreveal.min.js"></script>
      
      <!--=============== EMAIL JS ===============-->
      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
