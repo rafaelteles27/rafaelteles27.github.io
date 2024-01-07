@@ -145,3 +145,19 @@ const sr = ScrollReveal({
 sr.reveal(`.home_perfil, .about__image`, {origin: 'right'})
 sr.reveal(`.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`, {origin: 'left'})
 sr.reveal(`.services__card, .projects__card`, {interval: 100})
+
+/*============= INDEXPIC =====================*/
+
+function showQuestion() {
+    // Ask the user a question using the prompt function
+    var answer = prompt("Lets start simple. What is my first and last name?");
+
+    // Check if the answer is correct
+    if (answer  === "Rafael Teles") {
+        // If the answer is correct, redirect to indexpic.html
+        window.location.href = "indexpic.html";
+    } else {
+        // If the answer is incorrect, you can provide feedback or take other actions
+        alert("Incorrect answer. Try again!");
+    }
+}

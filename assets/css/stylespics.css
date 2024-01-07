@@ -1,0 +1,96 @@
+  /*=============== INDEXPIC =========== */ 
+
+  :root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(14, 98%, 50%);
+    --black-color: hsl(0, 0%, 0%);
+    --black-color-light: hsl(0, 0%, 40%);
+    --white-color: hsl(0, 0%, 95%);
+    --title-color: hsl(0, 0%, 0%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-light: hsl(0, 0%, 64%);
+    --body-color: hsl(0, 0%, 87%);
+    --container-color: hsl(0, 0%, 83%);
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Bai Jamjuree", sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+  }
+
+  .gallery {
+    --s: 130px; /* control the size of the images*/
+    
+    display: grid;
+    gap: 5px;
+    position: relative;
+  }
+  .gallery input {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    inset: calc(50% - var(--s)/3);
+    cursor: pointer;
+    --g: linear-gradient(#fff 0 0) no-repeat;
+    background: var(--g) 50%/60% 3px,var(--g) 50%/3px 60%,#222;
+    transition: 1.5s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .gallery > img {
+    width: var(--s);
+    aspect-ratio: 1;
+    grid-area: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(.5);
+    transition: 1s calc((var(--i) - 1)*.1s);
+  }
+  .gallery > img:nth-of-type(1) {--i:1;}
+  .gallery > img:nth-of-type(2) {--i:2;}
+  .gallery > img:nth-of-type(3) {--i:3;}
+  .gallery > img:nth-of-type(4) {--i:4;}
+  .gallery > img:nth-of-type(5) {--i:5;}
+  .gallery > img:nth-of-type(6) {--i:6;}
+  .gallery > img:nth-of-type(7) {--i:7;}
+  .gallery > img:nth-of-type(8) {--i:8;}
+  .gallery > img:nth-of-type(9) {--i:9;}
+  
+  .gallery > input:checked ~ img {
+    transform: 
+      rotate(calc(var(--i)* 360deg/8)) translate(calc(1.5*var(--s))) 
+      rotate(calc(var(--i)*-360deg/8));
+  }
+  .gallery > input:checked {
+    transform: rotate(135deg)
+  }
+  
+  
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: var(--body-color);
+  }
