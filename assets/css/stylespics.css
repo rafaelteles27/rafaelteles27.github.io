@@ -38,14 +38,15 @@
   }
 
   body {
-    font-family: Lato, sans-serif;
-	margin: 0;
+  font-family: Lato, sans-serif;
+/*	margin: 0;
 	padding: 1rem;
-	min-height: 100vh;
+	min-height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
     background: var(--black-color);
+    color: wheat;
   }
 
 
