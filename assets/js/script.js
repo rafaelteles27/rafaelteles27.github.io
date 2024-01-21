@@ -161,3 +161,23 @@ function showQuestion() {
         alert("Incorrect answer. Try again!");
     }
 }
+
+/*================ MUSIC PLAYER ============== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("audio");
+    const playPauseBtn = document.querySelector(".music-player");
+
+
+    playPauseBtn.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play();
+            playPauseBtn.classList.remove("ri-play-line");
+            playPauseBtn.classList.add("ri-pause-line");
+        } else {
+            audio.pause();
+            playPauseBtn.classList.remove("ri-pause-line");
+            playPauseBtn.classList.add("ri-play-line");
+        }
+    });
+});

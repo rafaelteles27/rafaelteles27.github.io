@@ -340,6 +340,10 @@
     row-gap: 2.5rem;
   }
 
+  .music-player {
+    margin-left: 10px; 
+}
+
   .nav__link{
     position: relative;
     color: var(--text-color-light);
