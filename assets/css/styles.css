@@ -212,24 +212,27 @@
     top: initial;
     bottom: -4px;
   }
+
   
+  /*
   .geometric-box {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: var(--first-color);
-    rotate: -30deg;
+    rotate: -45deg;
   }
   
   .geometric-box::after {
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 25px;
+    height: 25px;
     border: 3px solid var(--black-color);
-    left: -5px;
-    top: -5px;
+    left: -8px;
+    top: 8px;
   }
+  */
   
   .main {
     overflow: hidden; /* For animation ScrollReveal */
@@ -454,7 +457,7 @@
 
   .home__perfil .geometric-box{
     top: 2.5rem;
-    left: -.7rem;
+    left: -4rem;
     z-index: 10;
   }
 
@@ -607,7 +610,6 @@
 
   .about__img{
     position: relative;
-    border: 2px solid var(--white-color);
     z-index: 1;
   }
   
@@ -618,24 +620,24 @@
   }
 
   .about__shadow{
-    width: 150px;
-    height: 385px;
+    width: 220px;
+    height: 295px;
     background-color: var(--body-color);
-    top: -2.5rem;
-    right: -3.5rem;
+    top: 1rem;
+    right: -1.5rem;
     border-bottom: 4px solid var(--first-color);
     transition: background-color .4s;
   }
 
   .about__perfil .geometric-box{
-    top: 1.5rem;
+    top: 1rem;
     right: -2.8rem;
   }
 
   .about__line{
     filter: invert(1);
-    right: -1.25rem;
-    top: 6rem;
+    right: -3.25rem;
+    top: 16rem;
     width: 50px;
     transition: filter .4s;
   }
@@ -1345,7 +1347,7 @@
       width: 350px;
     }
     .about__img{
-      border: 8px solid var(--white-color);
+     
     }
     .about__shadow{
       width: 350px;
