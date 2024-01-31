@@ -107,7 +107,7 @@
   
   /*========== Variables Dark theme ==========*/
   body.dark-theme{
-    --first-color: hsl(14, 80%, 50%);
+    --first-color: hsl(0, 94%, 49%);
     --black-color: hsl(0, 0%, 18%);
     --black-color-light: hsl(0, 0%, 30%);
     --title-color: hsl(0, 0%, 95%);
@@ -483,7 +483,7 @@
   }
 
   .home__social-link:hover {
-    background-color: var(--black-color);
+    background-color: var(--first-color);
   }
 
   .home__info{
