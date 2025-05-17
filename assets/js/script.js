@@ -181,3 +181,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// GSAP Intro Animation
+gsap.from(".title", { duration: 1, y: -50, opacity: 0, ease: "power3.out" });
+gsap.from(".subtitle", { duration: 1.2, y: 50, opacity: 0, ease: "power3.out", delay: 0.2 });
+
+// Scroll Animations
+gsap.utils.toArray("section").forEach((section, index) => {
+    gsap.from(section, {
+        scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none none",
+        },
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+    });
+});
+
+// Hover Effects
+const projectCards = document.querySelectorAll(".project-card");
+projectCards.forEach(card => {
+    card.addEventListener("mouseenter", () => gsap.to(card, { scale: 1.05, duration: 0.3, ease: "power1.out" }));
+    card.addEventListener("mouseleave", () => gsap.to(card, { scale: 1, duration: 0.3, ease: "power1.out" }));
+});
